@@ -12,8 +12,13 @@ This protocol will tell you how to set up the same local enviroment I was using 
 
 For information about what Docker - https://www.docker.com/what-container
 
-### Docker Setup Instructions: (Currently working on this notebook)
-    
+### Docker Setup Instructions:
+1) **Build Docker Image:** docker build -t ab_env .
+2) **Run Docker Container:** docker run -it -v -p 8888:8888 ab_env --name ab_env
+3) **Run Jupyter Notebook:** jupyter notebook --ip 0.0.0.0 --allow-root
+
+To exit the docker enviroment simply type **exit** up to **2 times**.
+
 # Enviroment Setup via pip:
 
 This protocol will show you how to set up the same local enviroment I was using when conducting my data exploration and model development experiments directly on your box. This protocol is essentially just running pip and then activating jupyter notebooks.
@@ -21,5 +26,5 @@ This protocol will show you how to set up the same local enviroment I was using 
 ### Local Enviroment Setup:
 Run the all of these commands in the following order:
 
-1) Install Dependencies: pip install -r requirements.txt
-2) Activate Jupyter Notebook: jupyter notebook
+1) **Install Dependencies:** pip install -r requirements.txt
+2) **Activate Jupyter Notebook:** gjupyter notebook
