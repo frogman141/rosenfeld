@@ -21,5 +21,5 @@ This protocol will show you how to set up the same local enviroment I was using 
 ### Local Enviroment Setup:
 Run the all of these commands in the following order:
 
-1) pip install -r requirements.txt
-2) jupyter notebook
+1) Install Dependencies: pip install -r requirements.txt
+2) Activate Jupyter Notebook: jupyter notebook
